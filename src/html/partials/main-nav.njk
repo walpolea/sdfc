@@ -1,0 +1,10 @@
+<nav class="main-nav links">
+  <ul class="link-list">
+    {% from "partials/nav-link.njk" import navLink %}
+    {% for link in main_nav %}
+      <li>
+        {{ navLink(link) }}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

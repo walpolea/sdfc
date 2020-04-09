@@ -1,0 +1,15 @@
+{
+  "title": "San Diego Fighting Covid",
+  "short_title": "SDFC",
+  "logo": "/assets/lcf-logo-for-web.svg",
+  "main_nav": [
+    {
+      "title": "The T2 Tile Project",
+      "href": "https://t2tile.org"
+    },
+    {
+      "title": "Computing Up Podcast",
+      "href": "http://computingup.com"
+    }
+  ]
+}
