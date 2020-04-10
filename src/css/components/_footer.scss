@@ -2,7 +2,20 @@
   padding: 100px 0;
   text-align: center;
 
+  a {
+    color: $c_blue;
+  }
+
   .logo {
     max-width: 300px;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+    }
   }
 }

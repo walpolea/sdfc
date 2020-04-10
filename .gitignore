@@ -3,5 +3,5 @@ node_modules
 dist
 .nuxt
 /index.html
-
+*.code-workspace
 .now

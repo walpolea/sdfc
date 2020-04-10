@@ -4,21 +4,27 @@
   "logo": "/assets/lcf-logo-for-web.svg",
   "main_nav": [
     {
-      "title": "Latest News",
-      "href": "#latestnews"
-    },
-    {
       "title": "What is this?",
       "href": "#whatisthis"
+    },
+    {
+      "title": "Latest News",
+      "href": "#latestnews"
     },
     {
       "title": "How to Help",
       "href": "#howtohelp"
     },
     {
-      "title": "Twitter",
+      "title": "twitter",
       "href": "https://twitter.com/SDFightingCOVID",
       "target": "_blank"
     }
-  ]
+  ],
+  "contact_info": {
+    "name": "Jacob Byerline",
+    "email": "sandiegofightingcovid@gmail.com",
+    "twitter": "@SDFightingCOVID",
+    "twitter_link": "https://twitter.com/SDFightingCOVID"
+  }
 }

@@ -1,13 +1,14 @@
 .main-header {
-  padding: 100px 20px;
   .logo {
     display: block;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
   }
+}
 
-  @media (max-width: $sc_medium) {
+@media (max-width: $sc_medium) {
+  .main-header {
     .logo {
       max-width: 300px;
     }
