@@ -8,10 +8,13 @@
     <title>{{short_title}}</title>
   </head>
   <body>
-    {% include "partials/header.njk" %}
-    {% block content %}{% endblock %}
+    <main class="page">
+      {% include "partials/main-nav.njk" %}
+      {% include "partials/header.njk" %}
+      {% block content %}{% endblock %}
 
-    {% include "partials/footer.njk" %}
+      {% include "partials/footer.njk" %}
+    </main>
 
     <script src="js/scripts.min.js"></script>
   </body>

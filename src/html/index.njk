@@ -1,10 +1,13 @@
 <!-- Homepage index.html -->
 {% extends "layouts/default.njk" %}
 {% block content %}
-  <div class="container">
-    <img id="logo" src="{{logo}}" alt="The Living Computation Foundation Logo" width="60%"/>
-    <h1 class="title">{{welcome_message}}</h1>
-    <h2 class="subtitle">SOFT LAUNCH IN PROGRESS</h2>
-    {# {% include "partials/main-nav.njk" %} #}
-  </div>
+  <section id="latestnews" class="page-section container container--full bg_blue c_white">
+    {% include "partials/latest-news.njk" %}
+  </section>
+  <section id="whatisthis" class="page-section container container--full bg_white">
+    {% include "partials/what-is-this.njk" %}
+  </section>
+  <section id="howtohelp" class="page-section container container--full bg_gray ">
+    {% include "partials/how-to-help.njk" %}
+  </section>
 {% endblock %}

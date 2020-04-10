@@ -1,14 +1,84 @@
 .main-nav {
-  text-align: center;
-  margin: 50px 0;
-  padding: 0;
+  @extend .bg_blue;
+  padding: 15px 30px 10px 30px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 4px 0px 6px #00000066;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    @media screen and (max-width: $sc_medium) {
+      position: static;
+      top: unset;
+
+      img.logo {
+        display: none;
+      }
+
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      ul.link-list {
+        padding: 0;
+        justify-content: space-evenly;
+
+        li {
+          display: block;
+          text-align: center;
+
+          a {
+            padding-bottom: 5px;
+            border: none;
+
+            &:hover {
+              color: $c_white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    flex: 1;
+    display: block;
+    max-width: 200px;
+  }
+
+  .link-list {
+    justify-self: end;
+    text-align: right;
+    width: 100%;
+
+    a {
+      @extend .c_orange;
+      font-weight: 900;
+      font-size: 1.6rem;
+      text-decoration: none;
+      padding-bottom: 15px;
+      border-bottom: 4px solid $c_orange;
+
+      &:hover {
+        //color: $c_white;
+        border-color: $c_white;
+      }
+    }
+  }
 
   ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
     li {
-      display: inline-block;
-      margin: 5px;
+      //flex: 1;
+      margin: 0px 15px;
 
       a {
         display: inline-block;

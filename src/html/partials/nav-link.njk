@@ -1,3 +1,7 @@
 {% macro navLink(linkData) %}
-  <a href="{{linkData.href}}" class="button" target="_blank">{{linkData.title}}</a>
+  {% if linkData.target %}
+    <a href="{{linkData.href}}" target="{{linkData.target}}">{{linkData.title}}</a>
+  {% else %}
+    <a href="{{linkData.href}}" target="_parent">{{linkData.title}}</a>
+  {% endif %}
 {% endmacro %}

@@ -1,4 +1,7 @@
-<nav class="main-nav links">
+<nav id="main-nav" class="main-nav links">
+  <a href="/">
+    <img class="logo" src="/assets/logo-blue-bg.svg" alt="sdfc logo">
+  </a>
   <ul class="link-list">
     {% from "partials/nav-link.njk" import navLink %}
     {% for link in main_nav %}

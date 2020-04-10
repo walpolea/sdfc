@@ -4,12 +4,21 @@
   "logo": "/assets/lcf-logo-for-web.svg",
   "main_nav": [
     {
-      "title": "The T2 Tile Project",
-      "href": "https://t2tile.org"
+      "title": "Latest News",
+      "href": "#latestnews"
     },
     {
-      "title": "Computing Up Podcast",
-      "href": "http://computingup.com"
+      "title": "What is this?",
+      "href": "#whatisthis"
+    },
+    {
+      "title": "How to Help",
+      "href": "#howtohelp"
+    },
+    {
+      "title": "Twitter",
+      "href": "https://twitter.com/SDFightingCOVID",
+      "target": "_blank"
     }
   ]
 }

@@ -7,12 +7,20 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 550px) {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 
 .container {
   max-width: 1200px;
+
+  margin: 0 auto;
+
+  &--full {
+    padding: 75px 50px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 #logo {
@@ -23,25 +31,197 @@ html {
 h1 {
   font-size: 8rem;
   font-weight: 100;
-  margin: 3rem 0;
+  margin: 3rem 0 5rem 0;
 }
 
 h2 {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 900;
+  margin: 1.5rem 0;
+}
+
+h3 {
   margin: 1rem 0;
 }
 
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
-.button:hover {
-  color: #fff;
-  background-color: #3b8070;
+a {
+  color: $c_orange;
+}
+
+.padded {
+  padding: 75px 50px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+$overlaps: 0px, 10px, 20px, 25px, 30px, 40px, 50px, 60px, 65px, 60px, 75px, 100px, 125px, 150px, 175px, 200px, 225px, 250px, 275px, 300px, 350px, 400px, 450px,
+  500px, 550px, 600px;
+
+@each $overlap in $overlaps {
+  .overlap-next-#{$overlap} {
+    position: relative;
+    top: 0;
+    margin-bottom: -$overlap;
+    z-index: 1000;
+  }
+
+  .overlap-prev-#{$overlap} {
+    position: relative;
+    top: 0;
+    margin-top: -$overlap;
+    z-index: 1000;
+  }
+
+  .pad-top-#{$overlap} {
+    padding-top: $overlap;
+  }
+
+  .pad-bottom-#{$overlap} {
+    padding-bottom: $overlap;
+  }
+
+  .pad-left-#{$overlap} {
+    padding-left: $overlap;
+  }
+
+  .pad-right-#{$overlap} {
+    padding-right: $overlap;
+  }
+
+  .pad-horizontal-#{$overlap} {
+    padding-left: $overlap;
+    padding-right: $overlap;
+  }
+
+  .pad-vertical-#{$overlap} {
+    padding-top: $overlap;
+    padding-bottom: $overlap;
+  }
+
+  .offset-up-#{$overlap} {
+    position: relative;
+    top: -$overlap;
+  }
+
+  .offset-down-#{$overlap} {
+    position: relative;
+    top: $overlap;
+  }
+}
+
+.no-pad,
+.no-padding {
+  padding: 0;
+
+  &--vertical {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-top {
+    padding-top: 0;
+  }
+
+  &-bottom {
+    padding-bottom: 0;
+  }
+
+  &-left {
+    padding-left: 0;
+  }
+
+  &-right {
+    padding-right: 0;
+  }
+}
+
+.no-margin {
+  margin: 0;
+
+  &-top {
+    margin-top: 0;
+  }
+
+  &-bottom {
+    margin-bottom: 0;
+  }
+
+  &-left {
+    margin-left: 0;
+  }
+
+  &-right {
+    margin-right: 0;
+  }
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "header";
+
+  @media screen and (max-width: $sc_medium) {
+    grid-template-areas:
+      "header"
+      "nav";
+  }
+
+  #main-nav {
+    grid-area: nav;
+  }
+
+  #main-header {
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+  }
+}
+
+.news-item {
+  ul {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    li {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: $c_orange;
+  }
 }

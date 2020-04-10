@@ -26,9 +26,35 @@ body {
   }
 }
 
+$sc_small: 500px;
+$sc_medium: 800px;
+$sc_large: 1200px;
+
 //COLORS
 $c_blue: #24346e;
 $c_orange: #f36e21;
 $c_white: #ffffff;
 $c_black: #141414;
 $c_gray: #ededed;
+
+$allcolors: (
+  "black": $c_black,
+  "gray": $c_gray,
+  "white": $c_white,
+  "blue": $c_blue,
+  "orange": $c_orange,
+);
+
+@each $colorname, $color in $allcolors {
+  .c_#{$colorname} {
+    color: $color;
+  }
+
+  .bg_#{$colorname} {
+    background-color: $color;
+  }
+
+  .border_#{$colorname} {
+    border-color: $color;
+  }
+}
