@@ -1,4 +1,7 @@
+<!-- Homepage index.html -->
 {% extends "layouts/default.njk" %}
 {% block content %}
-  <h1>News & Events</h1>
+  <section id="latestnews" class="page-section container container--full bg_white">
+    {% include "partials/all-news.njk" %}
+  </section>
 {% endblock %}

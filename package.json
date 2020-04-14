@@ -8,7 +8,12 @@
     "dev": "gulp",
     "build": "gulp build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "marked": "^0.8.2",
+    "moment": "^2.24.0",
+    "vue": "^2.6.11"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",

@@ -27,6 +27,14 @@ html {
   }
 }
 
+ul {
+  margin-bottom: 15px;
+}
+
+li {
+  margin: 8px 0;
+}
+
 #logo {
   display: block;
   margin: 0 auto;
@@ -42,6 +50,11 @@ h2 {
   font-size: 4rem;
   font-weight: 900;
   margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 h3,
@@ -232,6 +245,20 @@ $overlaps: 0px, 10px, 20px, 25px, 30px, 40px, 50px, 60px, 65px, 60px, 75px, 100p
 
   a {
     color: $c_orange;
+  }
+
+  img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 10px 10px;
+
+    @media screen and (max-width: $sc_medium) {
+      margin: 5px 5px;
+      width: 125px;
+      height: 125px;
+    }
   }
 }
 

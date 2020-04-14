@@ -5,15 +5,15 @@
   "main_nav": [
     {
       "title": "What is this?",
-      "href": "#whatisthis"
+      "href": "/#whatisthis"
     },
     {
       "title": "Latest News",
-      "href": "#latestnews"
+      "href": "/#latestnews"
     },
     {
       "title": "How to Help",
-      "href": "#howtohelp"
+      "href": "/#howtohelp"
     },
     {
       "title": "twitter",
