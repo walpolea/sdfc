@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "airtable": "^0.8.1",
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "moment": "^2.24.0",
     "vue": "^2.6.11"
   },
